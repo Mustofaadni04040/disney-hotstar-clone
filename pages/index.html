@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Disney+ Hotstar</title>
+
+    <!-- FAVICON -->
+    <link
+      rel="shortcut icon"
+      href="/assets/images/disney favicon.png"
+      type="image/x-icon"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/styles/styles.css" />
+    <link rel="stylesheet" href="/parts/navbar/styles.css" />
+    <link rel="stylesheet" href="/parts/carousel/styles.css" />
+    <link rel="stylesheet" href="/parts/videoCardThumbnail/styles.css" />
+    <link rel="stylesheet" href="/parts/moviesList/styles.css" />
+
+    <!-- ICON -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
+  </head>
+
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+      <img src="/assets/images/logo.png" class="brand-logo" alt="disney logo" />
+      <ul class="nav-links">
+        <div class="nav-serial">
+          <li class="nav-items" id="serial"><a href="#">Serial</a></li>
+          <i class="bx bx-chevron-down" id="arrow-serial"></i>
+        </div>
+        <div class="dropdown-serial" id="dropdown-serial">
+          <a href="#">Hotstar Specials</a>
+          <a href="#">Select Picks</a>
+        </div>
+        <div class="nav-film">
+          <li class="nav-items" id="film"><a href="#">Film</a></li>
+          <i class="bx bx-chevron-down" id="arrow-film"></i>
+        </div>
+        <div class="dropdown-film" id="dropdown-film">
+          <a href="#">Indonesian</a>
+          <a href="#">English</a>
+        </div>
+        <li class="nav-items"><a href="#">Disney+</a></li>
+        <li class="nav-items"><a href="#">Lokal</a></li>
+      </ul>
+      <a href="#"
+        ><img
+          src="/assets/images/kids.svg"
+          alt="disney kids"
+          class="disney-kids-logo"
+      /></a>
+
+      <div class="right-container">
+        <input type="text" class="search-box" placeholder="Cari" />
+        <button class="sub-btn">Langganan</button>
+        <a href="#" class="login-btn">MASUK</a>
+      </div>
+    </nav>
+
+    <!-- CARAOUSEL -->
+    <div class="caraousel-container">
+      <div class="caraousel">
+        <i class="ri-arrow-left-s-line pre-slider"></i>
+        <i class="ri-arrow-right-s-line nxt-slider"></i>
+        <!-- <div class="slider">
+          <div class="slide-content">
+            <h1 class="movie-title">perempuan Bergaun Merah</h1>
+            <p class="movie-info">Indonesia • Horror • 2022</p>
+            <p class="movie-description">
+              Hidup Dinda berubah menjadi mimpi buruk sejak temannya <br />
+              menghilang secara misterius.
+            </p>
+          </div>
+
+          <img
+            src="https://img1.hotstarext.com/image/upload/f_auto,t_web_m_1x/sources/r1/cms/prod/8539/1498539-h-9bab3d528026"
+            alt="silder 1"
+          />
+        </div> -->
+      </div>
+    </div>
+
+    <!-- VIDEO CARD -->
+    <div class="video-card-container">
+      <div class="video-card">
+        <img
+          src="/assets/images/disney.png"
+          alt="disney"
+          class="video-card-image"
+        />
+        <video
+          src="/assets/videos/disney.mp4"
+          muted
+          loop
+          class="card-video"
+        ></video>
+      </div>
+      <div class="video-card">
+        <img
+          src="/assets/images/marvel.png"
+          alt="marvel"
+          class="video-card-image"
+        />
+        <video
+          src="/assets/videos/marvel.mp4"
+          muted
+          loop
+          class="card-video"
+        ></video>
+      </div>
+      <div class="video-card">
+        <img
+          src="/assets/images/geographic.png"
+          alt="geographic"
+          class="video-card-image"
+        />
+        <video
+          src="/assets/videos/geographic.mp4"
+          muted
+          loop
+          class="card-video"
+        ></video>
+      </div>
+      <div class="video-card">
+        <img
+          src="/assets/images/pixar.png"
+          alt="pixar"
+          class="video-card-image"
+        />
+        <video
+          src="/assets/videos/pixar.mp4"
+          muted
+          loop
+          class="card-video"
+        ></video>
+      </div>
+      <div class="video-card">
+        <img
+          src="/assets/images/star-wars.png"
+          alt="star wars"
+          class="video-card-image"
+        />
+        <video
+          src="/assets/videos/star-war.mp4"
+          muted
+          loop
+          class="card-video"
+        ></video>
+      </div>
+    </div>
+
+    <div class="movies-container">
+      <!-- MOVIE REKOMENDASI -->
+      <h1 class="title">Direkomendasikan untuk Anda</h1>
+      <div class="movies-list">
+        <i class="ri-arrow-left-s-line pre-recommend-btn"></i>
+        <i class="ri-arrow-right-s-line nxt-recommend-btn"></i>
+        <div class="card-recommended-container">
+          <!--element lainnya di js-->
+        </div>
+      </div>
+
+      <!-- MOVIE BARU -->
+      <h1 class="title">Baru di Disney+ Hotstar</h1>
+      <div class="movies-list">
+        <img
+          src="../assets/images/arrow-left-s-line.png"
+          alt=""
+          class="pre-new-btn"
+        />
+        <i class="ri-arrow-right-s-line nxt-new-btn"></i>
+        <div class="card-new-container"><!--element lainnya di js--></div>
+      </div>
+
+      <!-- MOVIE TRENDING -->
+      <h1 class="title">Trending</h1>
+      <div class="movies-list">
+        <i class="ri-arrow-left-s-line pre-trend-btn"></i>
+        <i class="ri-arrow-right-s-line nxt-trend-btn"></i>
+        <div class="card-trending-container"><!--element lainnya di js--></div>
+      </div>
+
+      <!-- SERIAL ORIGINAL DISNEY+ -->
+      <h1 class="title">Serial Original Disney+</h1>
+      <div class="movies-list">
+        <i class="ri-arrow-left-s-line pre-serial-btn"></i>
+        <i class="ri-arrow-right-s-line nxt-serial-btn"></i>
+        <div class="card-serial-container"><!--element lainnya di js--></div>
+      </div>
+
+      <!-- SERIAL JUNIOR -->
+      <h1 class="title">Serial Disney Junior</h1>
+      <div class="movies-list">
+        <i class="ri-arrow-left-s-line pre-junior-btn"></i>
+        <i class="ri-arrow-right-s-line nxt-junior-btn"></i>
+        <div class="card-junior-container"></div>
+      </div>
+
+      <!-- KRONOLOGI WAKTU MARVEL CINAMATIC UNIVERSE -->
+      <h1 class="title">Kronologi Waktu Marvel Cinematic Universe</h1>
+      <div class="movies-list">
+        <i class="ri-arrow-left-s-line pre-junior-btn"></i>
+        <i class="ri-arrow-right-s-line nxt-junior-btn"></i>
+        <div class="card-junior-container"></div>
+      </div>
+
+      <!-- DUNIA PIXAR -->
+      <h1 class="title">Dunia Pixar</h1>
+      <div class="movies-list">
+        <i class="ri-arrow-left-s-line pre-junior-btn"></i>
+        <i class="ri-arrow-right-s-line nxt-junior-btn"></i>
+        <div class="card-junior-container"></div>
+      </div>
+
+      <!-- STAR WARS -->
+      <h1 class="title">Star Wars dari Masa ke Masa</h1>
+      <div class="movies-list">
+        <i class="ri-arrow-left-s-line pre-junior-btn"></i>
+        <i class="ri-arrow-right-s-line nxt-junior-btn"></i>
+        <div class="card-junior-container"></div>
+      </div>
+
+      <!-- LIVE ACTION -->
+      <h1 class="title">Film Live Action</h1>
+      <div class="movies-list">
+        <i class="ri-arrow-left-s-line pre-junior-btn"></i>
+        <i class="ri-arrow-right-s-line nxt-junior-btn"></i>
+        <div class="card-junior-container"></div>
+      </div>
+
+      <!-- PUTRI PUTRI DISNEY -->
+      <h1 class="title">Putri-Putri Disney</h1>
+      <div class="movies-list">
+        <i class="ri-arrow-left-s-line pre-junior-btn"></i>
+        <i class="ri-arrow-right-s-line nxt-junior-btn"></i>
+        <div class="card-junior-container"></div>
+      </div>
+
+      <!-- DOKUMENTER -->
+      <h1 class="title">Dokumenter</h1>
+      <div class="movies-list">
+        <i class="ri-arrow-left-s-line pre-junior-btn"></i>
+        <i class="ri-arrow-right-s-line nxt-junior-btn"></i>
+        <div class="card-junior-container"></div>
+      </div>
+
+      <!-- FILM PENDEK -->
+      <h1 class="title">Film Pendek</h1>
+      <div class="movies-list">
+        <i class="ri-arrow-left-s-line pre-junior-btn"></i>
+        <i class="ri-arrow-right-s-line nxt-junior-btn"></i>
+        <div class="card-junior-container"></div>
+      </div>
+
+      <!-- MUSIKAL -->
+      <h1 class="title">Musikal</h1>
+      <div class="movies-list">
+        <i class="ri-arrow-left-s-line pre-junior-btn"></i>
+        <i class="ri-arrow-right-s-line nxt-junior-btn"></i>
+        <div class="card-junior-container"></div>
+      </div>
+
+      <!-- LAGA DAN PETUALANGAN -->
+      <h1 class="title">Laga dan Petualangan</h1>
+      <div class="movies-list">
+        <i class="ri-arrow-left-s-line pre-junior-btn"></i>
+        <i class="ri-arrow-right-s-line nxt-junior-btn"></i>
+        <div class="card-junior-container"></div>
+      </div>
+
+      <!-- FILM NOSTALGIA -->
+      <h1 class="title">Film Nostalgia</h1>
+      <div class="movies-list">
+        <i class="ri-arrow-left-s-line pre-junior-btn"></i>
+        <i class="ri-arrow-right-s-line nxt-junior-btn"></i>
+        <div class="card-junior-container"></div>
+      </div>
+    </div>
+
+    <script src="/parts/carousel/carousel.js" async></script>
+    <script src="/parts/navbar/index.js"></script>
+    <script src="/parts/videoCardThumbnail/thumbnail.js"></script>
+    <script src="/parts/sliderMovies/slider.js"></script>
+    <script src="/parts/moviesList/recommended.js"></script>
+    <script src="/parts/moviesList/newMovies.js"></script>
+    <script src="/parts/moviesList/trending.js"></script>
+    <script src="/parts/moviesList/serial.js"></script>
+    <script src="/parts/moviesList/serialJunior.js"></script>
+  </body>
+</html>

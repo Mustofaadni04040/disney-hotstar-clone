@@ -1,0 +1,186 @@
+.movies-container {
+  width: 100%;
+  position: relative;
+}
+
+.title {
+  color: #fff;
+  opacity: 0.9;
+  padding-left: 4%;
+  width: fit-content;
+  text-transform: capitalize;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.title:hover {
+  cursor: pointer;
+  color: #1f80e0;
+}
+
+.movies-list {
+  width: 100%;
+  height: 220px;
+  position: relative;
+  margin: 10px 0 20px;
+}
+
+.card-recommended-container,
+.card-new-container,
+.card-trending-container,
+.card-serial-container,
+.card-junior-container {
+  position: relative;
+  width: 92%;
+  top: -15px;
+  padding-left: 10px;
+  height: 240px;
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+  overflow-x: auto;
+  overflow-y: visible;
+  scroll-behavior: smooth;
+}
+
+.card-recommended-container::-webkit-scrollbar,
+.card-new-container::-webkit-scrollbar,
+.card-trending-container::-webkit-scrollbar,
+.card-serial-container::-webkit-scrollbar,
+.card-junior-container::-webkit-scrollbar {
+  display: none;
+}
+
+.card {
+  position: relative;
+  cursor: pointer;
+  min-width: 150px;
+  width: 150px;
+  height: 200px;
+  border-radius: 7px;
+  overflow: hidden;
+  margin-right: 10px;
+  transition: 0.5s;
+}
+
+.card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card:hover {
+  transform: scale(1.2);
+  z-index: 99;
+}
+
+.card:last-child:hover {
+  transform-origin: right;
+  transform: scale(1.2);
+}
+.card:first-child:hover {
+  transform-origin: left;
+  transform: scale(1.2);
+}
+.card:hover .card-body {
+  opacity: 1;
+}
+
+.card-body {
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  background: linear-gradient(to bottom, rgba(4, 8, 15, 0), #192133 90%);
+  padding: 10px;
+  transition: 0.5s;
+}
+
+.name {
+  color: #fff;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: capitalize;
+  margin-top: 30%;
+}
+
+.des {
+  color: #fff;
+  line-height: 15px;
+  opacity: 0.8;
+  margin: 5px 0;
+  font-weight: 600;
+  font-size: 9px;
+}
+
+.watchlist-btn {
+  position: relative;
+  font-size: 8px;
+  width: 100%;
+  text-transform: capitalize;
+  background: none;
+  border: none;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.5);
+  margin: 5px 0;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.watchlist-btn::before {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: -3px;
+  height: 30px;
+  width: 30px;
+  background-image: url(/assets/images/add.png);
+  background-size: cover;
+  transform: scale(0.4);
+}
+
+.watchlist-btn:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* BTN MOVIES */
+.pre-recommend-btn,
+.nxt-recommend-btn,
+.pre-new-btn,
+.nxt-new-btn,
+.pre-trend-btn,
+.nxt-trend-btn,
+.pre-serial-btn,
+.nxt-serial-btn,
+.pre-junior-btn,
+.nxt-junior-btn {
+  position: absolute;
+  font-size: 55px;
+  font-weight: 100;
+  color: #fff;
+  top: 80px;
+  z-index: 100;
+  opacity: 0;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+
+.pre-recommend-btn,
+.pre-new-btn,
+.pre-trend-btn,
+.pre-serial-btn,
+.pre-junior-btn {
+  left: 0;
+}
+
+.nxt-recommend-btn,
+.nxt-new-btn,
+.nxt-trend-btn,
+.nxt-serial-btn,
+.nxt-junior-btn {
+  right: 0;
+}

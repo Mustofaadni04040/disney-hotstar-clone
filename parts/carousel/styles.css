@@ -1,0 +1,90 @@
+/* CARAOUSEL */
+.caraousel-container {
+  position: relative;
+  width: 100%;
+  height: 525px;
+  padding: 10px 0 20px 0;
+  overflow-x: hidden;
+  margin-top: 80px;
+}
+
+.caraousel {
+  display: flex;
+  width: 92%;
+  height: 100%;
+  position: relative;
+  margin: auto;
+}
+
+.caraousel:hover {
+  cursor: pointer;
+}
+
+.slider {
+  flex: 0 0 auto;
+  margin-right: 30px;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  transition: 1s;
+  overflow: hidden;
+}
+
+.slider img {
+  width: 70%;
+  min-height: 100%;
+  object-fit: cover;
+  display: block;
+  margin-left: auto;
+}
+
+.slide-content {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  z-index: 2;
+  background: linear-gradient(to right, #030b17 80%, #0c111b00);
+  color: #fff;
+}
+
+.movie-title {
+  padding-left: 50px;
+  text-transform: capitalize;
+  margin-top: 70px;
+}
+
+.movie-description,
+.movie-info {
+  width: 80%;
+  color: #fff;
+  line-height: 28px;
+  padding-left: 50px;
+  margin-top: 10px;
+  opacity: 0.7;
+  font-size: 16px;
+}
+
+/* BTN CAROUSEL */
+.pre-slider,
+.nxt-slider {
+  position: absolute;
+  font-size: 65px;
+  font-weight: 100;
+  color: #fff;
+  top: 210px;
+  z-index: 100;
+  opacity: 0;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+
+.pre-slider {
+  left: 0;
+}
+
+.nxt-slider {
+  right: 0;
+}

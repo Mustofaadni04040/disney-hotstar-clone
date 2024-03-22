@@ -1,0 +1,169 @@
+/* NAVBAR */
+.navbar {
+  width: 100%;
+  height: 80px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 0 4%;
+  background-color: #131a27;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+}
+
+.brand-logo {
+  height: 40px;
+}
+
+.nav-links {
+  margin-top: 10px;
+  display: flex;
+  list-style: none;
+  gap: 15px;
+}
+
+.nav-items a {
+  text-decoration: none;
+  margin-left: 20px;
+  text-transform: capitalize;
+  color: #fff;
+  opacity: 0.8;
+}
+
+.nav-items a:hover {
+  opacity: 1;
+}
+
+.nav-serial,
+.nav-film {
+  display: inline-flex;
+  align-items: center;
+}
+
+.bx {
+  font-size: 1.3rem;
+  color: #fff;
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.arrow {
+  transform: rotate(180deg);
+  transition: 0.2s ease;
+}
+
+.dropdown-serial {
+  position: absolute;
+  width: 175px;
+  left: 125px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 10px 0px,
+    rgba(0, 0, 0, 0.1) 0px 0px 0px 1px;
+  border-radius: 5px;
+  margin-top: 2rem;
+  background: #182235;
+  border: none;
+  visibility: hidden;
+  opacity: 0;
+  transform: translateY(0.5rem);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.5, 1);
+}
+
+.dropdown-film {
+  position: absolute;
+  width: 125px;
+  left: 225px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 10px 0px,
+    rgba(0, 0, 0, 0.1) 0px 0px 0px 1px;
+  border-radius: 5px;
+  margin-top: 2rem;
+  background: #182235;
+  border: none;
+  visibility: hidden;
+  opacity: 0;
+  transform: translateY(0.5rem);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.5, 1);
+}
+
+.dropdown-film a,
+.dropdown-serial a {
+  display: flex;
+  align-items: center;
+  column-gap: 0.5rem;
+  padding: 0.8rem 1.5rem;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+}
+
+.dropdown-film a:hover,
+.dropdown-serial a:hover {
+  background-color: #0c111b;
+  color: #fff;
+}
+
+.show {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0rem);
+}
+
+.disney-kids-logo {
+  padding-left: 35px;
+  width: 80px;
+  padding-top: 10px;
+}
+
+.right-container {
+  display: block;
+  margin-left: auto;
+}
+
+.search-box {
+  border: none;
+  border-bottom: 0.5px solid #fff;
+  background-color: transparent;
+  outline: none;
+  height: 30px;
+  color: #fff;
+  width: 250px;
+  text-transform: capitalize;
+  font-size: 16px;
+  font-weight: 500;
+  transition: 0.5s;
+  opacity: 0.8;
+}
+
+.search-box:focus {
+  width: 400px;
+  border-color: #1f80e0;
+}
+
+.search-box::placeholder {
+  color: #fff;
+  opacity: 0.8;
+}
+
+.sub-btn {
+  background-color: #1f80e0;
+  height: 30px;
+  padding: 0 15px;
+  color: #fff;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 12px;
+  margin: 0 10px;
+}
+
+.login-btn {
+  color: #fff;
+  opacity: 0.8;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: 500;
+  text-decoration: none;
+}
